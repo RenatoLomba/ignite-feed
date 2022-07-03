@@ -1,0 +1,48 @@
+.button {
+  border: 1px solid;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  transition: all 0.2s ease;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 2px var(--white);
+}
+
+.outlined {
+  background: transparent;
+  color: var(--green-300);
+  border-color: var(--green-300);
+}
+
+.outlined:hover:not(:disabled) {
+  background: var(--green-500);
+  border-color: var(--green-500);
+  color: var(--white);
+}
+
+.contained {
+  background: var(--green-500);
+  border-color: var(--green-500);
+  color: var(--white);
+}
+
+.contained:hover:not(:disabled) {
+  background: var(--green-300);
+  border-color: var(--green-300);
+}

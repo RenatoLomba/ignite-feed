@@ -1,0 +1,20 @@
+.header {
+  background: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.logo strong {
+  font-size: 1.6rem;
+}

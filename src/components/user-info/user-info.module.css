@@ -1,0 +1,34 @@
+.profile {
+  display: flex;
+  gap: 1rem;
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info strong {
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.info span {
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.profile.column .info {
+  align-items: center;
+}
